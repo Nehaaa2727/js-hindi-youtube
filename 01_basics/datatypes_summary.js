@@ -30,3 +30,24 @@ console.log(typeof bigNumber);
 //  java is static typed language . means you have to define the type of variable before using it.
 //  eg. int number = 10; the type 'int ' is defined before using it.
 
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//    stack(Primitive)isme variable ka copy milta h, Heap(Non-Primitive) variable ka reference milta hai chamges original value mei hot hai nd whi show hota as output
+
+let myYoutubename = "neha"
+let anothername =  myYoutubename
+anothername = "wadhwa"
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email : "user@gmail.com",
+    upi: "user@ybl",
+}
+let userTwo = userOne
+
+userTwo.email = "neha@27"
+
+console.log(userOne.email);
+console.log(userTwo.email);
