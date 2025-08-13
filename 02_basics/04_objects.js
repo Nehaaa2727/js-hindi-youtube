@@ -42,14 +42,29 @@ const users = [
     }
 ]
 users[1].email
-console.log(tinderuser);
+// console.log(tinderuser);
 
-console.log(Object.keys(tinderuser)); 
-console.log(Object.values(tinderuser));
+// console.log(Object.keys(tinderuser)); 
+// console.log(Object.values(tinderuser));
  /*helps to make the object in array*/
 
 
- console.log(tinderuser.hasOwnProperty('isLoggedIn'));
+//  console.log(tinderuser.hasOwnProperty('isLoggedIn'));
  
+const course = {
+    coursename:"js in hindi",
+    price: "999",
+    courseinstructor: "hitesh"
+}
+const {courseinstructor: instructor} = course /*value ko rename kr skte hai */
+// console.log(courseinstructor);
+console.log(instructor);
 
+
+
+// apna kam ksi or ke sir par dal dene ko API khte hai for eg restru mei gye chole bhature ka order dia now its their headache to make it not ours
+// {
+//     "name":"neha",
+//     "coursename": "js in hinde",
+// } a way to write an api
 
