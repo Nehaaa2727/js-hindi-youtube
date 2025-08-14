@@ -28,9 +28,35 @@ const result = addTwoNumbers(3,5)
 
 function loginUserMessage(username = "sam"){
     if(username === undefined){
-        console.log("please enter a username");
+        // console.log("please enter a username");
         return
     }
     return `${username} just logged in `
 }
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+
+function calculateCartPrice(value1 , value2, ...num1){   /*yeh ... isko spred operator khte h used to add multiple values in a function*/
+    return num1
+}
+console.log(calculateCartPrice(200,300,400,2000));
+
+
+const user = {
+    username : "neha",
+    prices : 199
+}
+
+function handleObject(anyObject){
+    // console.log(`username is ${anyObject.username} and price is ${anyObject.prices}`);
+    
+}
+handleObject(user)
+
+const myNewArray = [200,300,100,600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
