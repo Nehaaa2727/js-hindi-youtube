@@ -1,0 +1,62 @@
+jo bhi file humne bnai hai js usko 2 phases mei run karti hai 
+1- {} called GLOBAL execution context and known as (this)
+browser ki value this ki value window object aayegi
+
+
+2- FUNCTION value context
+3- eval execution context
+
+----- types of phases----
+{}-  memory creation phase (allocates only memory)
+execution phase (all operation are performed here)
+
+
+SOURCE CODE
+let val1 = 10
+ let val2 = 5
+ function addnum(num1, num2){
+     let total = num1 + num2
+     return total
+ }
+ let result1 = addnum(val1, val2)
+ let result2 = addnum(10,2)
+
+STEPS:
+step1 - GLOBAL execution -> this
+
+step2 - memory phase
+val1 -> undefined
+val2 -> undefined
+addnum -> defination
+result1 -> undefined
+result2 -> undefined
+
+step3 - execution phase
+val1 -> 10
+val2 -> 5
+addnum -> {new variable enviroment + execution thread} (it get delte after work and values or result go back to the execution phase)
+        {
+            memory phase:
+            val1 -> undefined
+            val2 -> undefined
+            total-> undefined
+        }
+        {
+            execution phase:
+            num1 -> 10
+            num2 -> 5
+            total -> 15
+        }
+        result1 = 15
+        result2=  {new variable enviroment + execution thread}
+                  {
+                    memory phase:
+                  }
+                  {
+                    execution phase:
+        
+
+        CALL STACK
+works similar as stack implementation
+
+LIFO = last in first out
