@@ -1,0 +1,12 @@
+* js - 1.) synchronous
+2.) single threaded
+
+* EXECUTION CONTEXT
+execute one line of code at a time
+each operation waits for the last one to complete before EXECUTION
+
+--------------------------------------
+BLOCKING CODE (block the flow of program
+, read file sync)
+
+NON BLOCKING CODE (does not block EXECUTION, read file async)
